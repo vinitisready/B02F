@@ -1,10 +1,18 @@
 import React from 'react'
-import {Header} from './components'
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
+import "./App.css";
 
 const App = () => {
-  return <> 
-    <Header /> 
-  </>;
+  return (
+    <>
+    <div>
+    <Navbar /> 
+    <Header />
+    </div>
+    </>
+  
+  )
 }
 
 export default App
