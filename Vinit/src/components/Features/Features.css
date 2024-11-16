@@ -1,0 +1,117 @@
+.features-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .features-section h2 {
+    font-family: Cormorant;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.44px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #201041;
+  }
+  
+  .features-section p {
+    font-family: Cormorant;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.06px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 34px 0px 0px 0px;
+    gap: 38px;
+    opacity: 0px;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    text-align: center;
+    border: 1px solid #000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 20px 0px #00000055;
+  }
+  
+  
+  .feature-card h3 {
+    color: #2e2e3b;
+    font-family: Cormorant;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.22px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .feature-card p {
+    margin-top: 10px;
+    color: black;
+    font-family: Cormorant;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.22px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  @media (max-width: 770px) {
+    .features-section {
+      padding: 10px;
+    }
+  
+    .features-section h2 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  
+    .features-section p {
+      font-size: 14px;
+      line-height: 14.06px;
+    }
+  
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 15px 0px 0px 0px;
+      gap: 18px;
+      opacity: 0px;
+    }
+  
+    .feature-card {
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0px 4px 7px 0px #00000033;
+    }
+  
+    .feature-card h3 {
+      font-size: 15px;
+      line-height: 10px;
+    }
+  
+    .feature-card p {
+      margin-top: 5px;
+      font-size: 10px;
+      line-height: 10px;
+    }
+  }
