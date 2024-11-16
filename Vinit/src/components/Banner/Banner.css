@@ -1,0 +1,236 @@
+.main-banner {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    border: 2px solid #d1c4e9;
+    border-radius: 20px;
+    background: linear-gradient(
+      257.29deg,
+      rgba(153, 124, 152, 0.6) 6.5%,
+      #ffffff 18.5%,
+      rgba(159, 13, 118, 0.27) 41%,
+      #ffffff 77.5%,
+      rgba(153, 124, 152, 0.4) 90.5%
+    );
+    position: relative;
+  }
+  
+  .banner-content {
+    max-width: 50%;
+    z-index: 2;
+  }
+  
+  .main-banner p {
+    font-family: Cormorant;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 77.5px;
+    text-align: left;
+  }
+  
+  #b-p-1 {
+    color: #9f0d76;
+  }
+  
+  #b-p-2 {
+    color: #4c0c5c;
+  }
+  
+  #b-p-3 {
+    color: #a259ff;
+  }
+  
+  #b-p-4 {
+    font-family: Cormorant;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.75px;
+    text-align: left;
+  }
+  
+  .enroll-button {
+    background: #5a156b;
+    color: white;
+    width: 300px;
+    height: 80px;
+    border-radius: 15px;
+    font-family: Cormorant;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .enroll-button:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 10px 20px rgb(81, 81, 81);
+  }
+  
+  
+  
+  .banner-image {
+    flex: 0.5;
+  }
+  #b-img-1 {
+    position: absolute;
+    left: 40%;
+    top: 0;
+    max-width: 420px;
+    z-index: 5;
+    margin-right: 0;
+  }
+  
+  #b-img-1 img {
+    width: 200%;
+    display: block;
+  }
+  
+  #b-img-2 {
+    margin-right: 0;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    border-radius: 80% 30% 20% 30% / 50% 60% 20% 50%;
+    background: #eaf4fe;
+  }
+  
+  #b-img-2 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (max-width: 1400px) {
+    #b-img-1 {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      max-width: 300px;
+      z-index: 5;
+      margin-right: 0;
+    }
+  
+    #b-img-1 img {
+      width: 200%;
+      display: block;
+    }
+  
+    #b-img-2 {
+      margin-right: 0;
+      position: absolute;
+      left: 60%;
+      top: 40%;
+      width: 330px;
+      height: 300px;
+      z-index: 2;
+      border-radius: 80% 30% 20% 30% / 50% 60% 20% 50%;
+      background: #eaf4fe;
+    }
+  
+    #b-img-2 img {
+      width: 100%;
+      height: 80%;
+      display: block;
+      border-radius: 15px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  @media (max-width: 1200px) {
+    #b-img-1 {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      max-width: 300px;
+      z-index: 5;
+      margin-right: 0;
+    }
+  
+    #b-img-1 img {
+      width: 150%;
+      display: block;
+    }
+  }
+  @media (max-width: 770px) {
+    .main-banner {
+      padding: 20px;
+      margin-top: 75px;
+    }
+  
+    .main-banner p {
+      font-size: 20px;
+      line-height: 35px;
+    }
+  
+    #b-p-4 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  
+    .enroll-button {
+      width: 150px;
+      height: 40px;
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 20px;
+      margin-left: 20%;
+    }
+    .banner-image {
+      flex: 0.5;
+    }
+    #b-img-1 {
+      position: absolute;
+      left: 40%;
+      top: 10%;
+      max-width: 150px;
+      z-index: 5;
+      margin-right: 0;
+    }
+  
+    #b-img-1 img {
+      width: 150%;
+      display: block;
+    }
+  
+    #b-img-2 {
+      margin-right: 0;
+      position: absolute;
+      left: 55%;
+      top: 40%;
+      width: 150px;
+      height: 150px;
+      z-index: 2;
+      border-radius: 80% 30% 20% 30% / 50% 60% 20% 50%;
+      background: #eaf4fe;
+    }
+  
+    #b-img-2 img {
+      width: 100%;
+      height: 80%;
+      display: block;
+      border-radius: 15px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  @media (max-width: 390px) {
+    .main-banner {
+      padding: 20px;
+      margin-top: 110px;
+    }
+    #b-img-1 img {
+      width: 135%;
+      display: block;
+    }
+  }

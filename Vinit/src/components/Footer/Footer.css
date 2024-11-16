@@ -1,0 +1,159 @@
+.footer {
+    background: url("footer img.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex: 10;
+    font-style: italic;
+  }
+  
+  .footer-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .footer-content div {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer h3 {
+    font-family: Cormorant;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .footer ul {
+    list-style: none;
+    font-family: Cormorant;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .footer li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 8px;
+    color: black;
+    margin-top: 100px;
+  }
+  
+  .newsletter h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  #root > footer > div > div.newsletter > div.newsletter-input {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  #root > footer > div > div.newsletter > div.newsletter-input input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    flex-grow: 1;
+    font-weight: 500;
+    transform: skewX(-10deg);
+    transition: transform 0.3s ease;
+  }
+  #root > footer > div > div.newsletter > div.newsletter-input button {
+    padding: 12px 20px;
+    background-color: palevioletred;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+    transform: skewX(-10deg);
+    transition: transform 0.3s ease;
+  }
+  
+  #root > footer > div > div.newsletter > div.f-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    gap: 5px;
+    background-color: black;
+    margin-left: 15%;
+    margin-top: 20px;
+    transform: skewX(-10deg);
+    transition: transform 0.3s ease;
+  }
+  
+  #root > footer > div > div.newsletter > div.f-s a {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 770px) {
+    .footer-content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .footer-content div {
+      margin: 20px 0;
+    }
+  
+    .footer h3 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .footer ul {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .newsletter {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .f-s {
+      justify-content: center;
+    }
+    #root > footer > div > div.newsletter > div.f-s {
+      margin-left: 5%;
+    }
+  }

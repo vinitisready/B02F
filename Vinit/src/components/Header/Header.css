@@ -1,12 +1,12 @@
 
 .hero-container {
-  background: url("/image 1.png") no-repeat;
+  background: url("C:\Users\VINIT KUMAR\Desktop\B02F\Vinit\src\assets\Frame 23.jpg") no-repeat;
   height: 34vw;
-  margin: 30px auto;
+  width: 100%;
   background-size: contain;
   position: relative;
+  margin-bottom: 30px;
 }
-
 .header-content-img {
   position: absolute;
   display: flex;
@@ -24,7 +24,10 @@
   font-size: 1vw;
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  #nav-links {
+    margin-top: 10%;
+  }
   .header-content-img p {
     display: block;
     font-size: 14px;
@@ -46,5 +49,23 @@
 
   #m-p-3 {
     color: #e52fde;
+  }
+}
+@media (max-width: 460px) {
+  #nav-links {
+    margin-top: 10%;
+  }
+  .header-content-img p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 330px) {
+  .header-content-img p {
+    font-size: 8px;
+  }
+  #m-p-1,
+  #m-p-2,
+  #m-p-3 {
+    font-weight: bolder;
   }
 }
